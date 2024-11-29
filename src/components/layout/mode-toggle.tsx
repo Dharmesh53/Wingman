@@ -9,6 +9,13 @@ export function ModeToggle() {
 
   const handleKeydown = useCallback(
     (event: KeyboardEvent) => {
+      if (
+        event.target instanceof HTMLInputElement ||
+        event.target instanceof HTMLTextAreaElement ||
+        event.target instanceof HTMLSelectElement
+      ) {
+        return;
+      }
       if (event.key === "m" || event.key === "M") {
         event.preventDefault();
         toggleTheme();
