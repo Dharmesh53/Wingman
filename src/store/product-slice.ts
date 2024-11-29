@@ -16,7 +16,7 @@ const productSlice = createSlice({
   name: "product",
   initialState,
   reducers: {
-    setProducts(state, action: PayloadAction<ProductState[]>) {
+    setProducts(state, action: PayloadAction<CardDataType[]>) {
       state.products = action.payload;
     },
     setSearchTerm(state, action: PayloadAction<string>) {
