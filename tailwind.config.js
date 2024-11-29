@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        custom: {
+          background: "hsl(var(--custom-background))",
+          foreground: "hsl(var(--custom-foreground))",
+        },
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -41,6 +46,7 @@ export default {
       fontFamily: {
         sans: ["Poppins", "serif"],
         mono: ["Fira Code", "monospace"],
+        brand: ["Amara"],
         heading: ["Urbanist", "sans-serif"],
         parkinsans: ["Parkinsans", "serif"],
       },
