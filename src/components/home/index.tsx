@@ -2,13 +2,14 @@ import { useCallback, useEffect, useState } from "react";
 
 import axios from "../../api/axios";
 import { HomeLayout } from "../../layouts/home-layout";
+import { CardDataType } from "../../types";
 import { Callout } from "../shared/callout";
 import { Card } from "../shared/card";
 import { Loading } from "../shared/loading";
 import MaxWidthWrapper from "../shared/max-width-wrapper";
 
 export function Home() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<CardDataType[]>([]);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState("");
 

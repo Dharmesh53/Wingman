@@ -32,6 +32,7 @@ import {
   Search,
   Settings,
   ShoppingCart,
+  Star,
   SunMedium,
   Trash,
   User,
@@ -109,6 +110,7 @@ export const Icons: Record<
   search: Search,
   settings: Settings,
   spinner: Loader2,
+  star: Star,
   sun: SunMedium,
   trash: Trash,
   twitter: ({ ...props }: LucideProps) => (
