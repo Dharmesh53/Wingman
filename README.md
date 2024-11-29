@@ -1,13 +1,11 @@
 # Wingman App Setup
 
----
-
 ## Prerequisites
 
-Ensure you have the following installed on your system:
-**pnpm**: A fast, disk-efficient package manager.
-
----
+Ensure you have either of the package manager installed on your system:\
+**Nodejs**: A javascript runtime environment.\
+**pnpm**: A fast, disk-efficient package manager.\
+**npm**: A slow ass package manager.\
 
 ## Steps to Run the App
 
@@ -18,14 +16,14 @@ git clone https://github.com/Dharmesh53/Wingman
 cd Wingman
 ```
 
-### Install the dependencies and Run the app (PNPM)
+### Install dependencies and run the app using PNPM
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-### Install the dependencies and Run the app (NPM)
+### Install dependencies and run the app using NPM
 
 ```bash
 npm install
